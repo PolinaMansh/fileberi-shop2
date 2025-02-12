@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФайлБери - Магазин цифровых товаров</title>
+    <style>
+        :root {
+            --pink-light: #FFD6DA;
+            --pink: #FFC6D0;
+            --mint: #E1F7E7;
+            --blue-light: #D1EAF7;
+            --blue-medium: #C3D6F2;
+            --blue-dark: #768CCE;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, var(--pink-light), var(--blue-light));
+        }
+
+        .header {
+            background-color: var(--blue-dark);
+            padding: 1rem;
+            color: white;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(45deg, var(--pink), var(--blue-medium));
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .products {
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: var(--blue-dark);
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: var(--blue-dark);
+        }
+
+        .btn {
+            background-color: var(--blue-dark);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">ФайлБери</div>
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-user"></i> Личный кабинет</a>
+                <a href="#"><i class="fas fa-heart"></i> Избранное</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Корзина</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>ФайлБери</h1>
+        <p>Ваш магазин цифровых товаров для планирования и организации</p>
+    </section>
+
+    <main class="products">
+        <div class="product-card">
+            <img src="table1.jpg" alt="Таблица расходов и доходов" class="product-image">
+            <h3 class="product-title">Таблица расходов и доходов</h3>
+            <p class="product-price">199 ₽</p>
+            <a href="product1.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="product-card">
+            <img src="table2.jpg" alt="Таблица расходов и доходов премиум" class="product-image">
+            <h3 class="product-title">Таблица расходов и доходов премиум</h3>
+            <p class="product-price">199 ₽</p>
+            <a href="product2.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="product-card">
+            <img src="wedding.jpg" alt="Таблица расходов и организации свадьбы" class="product-image">
+            <h3 class="product-title">Таблица расходов и организации свадьбы</h3>
+            <p class="product-price">199 ₽</p>
+            <a href="product3.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="product-card">
+            <img src="savings.jpg" alt="Таблица правильных накоплений" class="product-image">
+            <h3 class="product-title">Таблица правильных накоплений</h3>
+            <p class="product-price">199 ₽</p>
+            <a href="product4.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="product-card">
+            <img src="habits.jpg" alt="Таблица трекер привычек" class="product-image">
+            <h3 class="product-title">Таблица трекер привычек</h3>
+            <p class="product-price">199 ₽</p>
+            <a href="product5.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="product-card">
+            <img src="goals.jpg" alt="Трекер поставленных целей" class="product-image">
+            <h3 class="product-title">Трекер поставленных целей</h3>
+            <p class="product-price">199 ₽</p>
+            <a href="product6.html" class="btn">Подробнее</a>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+</body>
+</html>
